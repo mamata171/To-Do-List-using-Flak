@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}">
+</head>
+<body>
+    <div class="navbar">
+        <!-- <img src="path/to/logo.png" alt="My Logo"> -->
+        <a href="#">Home</a>
+        <a href="/todo">Add To-do</a>
+        <a href="/dashboard">Dashboard</a>
+
+      <a href="#" class="contact">Contact</a>
+    </div>
+
+    {% block body%}
+    {% endblock %}
+
+    <!-- <div class="foot">
+        copyright @ todo by web app
+    </div> -->
+</body>
+</html>

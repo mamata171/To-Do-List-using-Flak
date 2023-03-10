@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block body%}
+    <img class="home-image" src="{{url_for('static',filename = 'img/code_women.jpeg')}}" alt="My Home Image">
+	<div class="home-image-text">Welcome To  <br><span>To-Do Web Page</span></div>
+	
+    <div class="cont">
+      
+        <div class="row">
+            <h2>About</h2>
+            <img class="ri" src="{{url_for('static',filename = 'img/back2.jpg')}}" alt="My Home Image">
+            <p>This website is simple to-do app that stores the data in mysql and gives a good your to do list in a prt</p>
+        </div>
+
+        <div class="row">
+            <h2>To-Do</h2>
+            <img class="ri" src="{{url_for('static',filename = 'img/home-bg.jpg')}}" alt="My Home Image">
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque? adipisicing elit. Quamahjsh hajshoi wiuieasn</p></p>
+        </div>
+
+        <div class="row">
+            <h2>Dashboard</h2>
+            <img class="ri" src="{{url_for('static',filename = 'img/code.jpeg')}}" alt="My Home Image">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, neque?orem ipsum dolor sit amet conse. Quam, neque?</p>
+        </div>
+ 
+    </div>
+
+    {% endblock %}

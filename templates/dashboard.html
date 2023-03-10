@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+{% block body%}
+
+<div class="upper">
+<div class="img">
+    <img src="{{url_for('static',filename = 'img/admin1.webp')}}" alt="">
+</div>
+
+<div class="head">
+    <h1>Access and Manipulate your task</h1>
+</div>
+</div>
+
+
+<div class="addnew  add-btn">
+    <a href="/edit/0"><button class="btn btn-primary ms-3">Addnew</button></a>
+</div>
+
+
+    <div class="container">
+
+        <table class="table table-striped table-bordered">
+            <thead>
+            <tr class="text-center">
+                <th>Title</th>
+                <th>Description</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            </thead>
+            <tbody class="text-center">
+            {% for post in tasks%}
+            <tr>
+                <td>{{post.title}}</td>
+                <td>{{post.desc}}</td>
+                <td><a href="/edit/{{post.title}}"><button>Edit</button></a></td>
+                <td><a href="delete/{{post.title}}"><button>Delete</button></a></td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+
+    </div> 
+</div>
+
+
+
+
+
+
+
+{% endblock %}

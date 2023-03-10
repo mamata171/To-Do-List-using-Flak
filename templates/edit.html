@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="{{url_for('static',filename = 'style.css')}}"> -->
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="form">
+        <form action="/edit/{{title}}" method="post">
+            <h1>Add Or Edit Your Task</h1>
+
+         <div class="fe">
+            <label for="title">Title</label> <br>
+            <input type="text" name="title" value="{{task.title}}">
+         </div>
+
+            <div class="fe">
+            <label for="">Description</label> <br>
+            <textarea name="desc" id="" cols="30" rows="10" >{{task.desc}}</textarea>
+            </div>
+
+            <div class="parent">
+            <div class="fe">
+                <button type="submit">ADD</button>
+                
+            </div>
+
+            <div class="fe fb">
+            <button> <a href="/dashboard">Dashboard </a> </button>
+                
+            </div>
+        </div>
+        </form>
+    </div>
+</body>
+</html>

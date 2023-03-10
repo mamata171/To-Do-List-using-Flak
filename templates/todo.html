@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block body%}
+
+    <div class="form">
+        <form action="/todo" method="post">
+            <h1>Add Your Task</h1>
+
+         <div class="fe">
+            <label for="title">Title</label> <br>
+            <input type="text" name="title">
+         </div>
+
+            <div class="fe">
+            <label for="">Description</label> <br>
+            <textarea name="desc" id="" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="fe">
+                <button type="submit">ADD</button>
+            </div>
+        </form>
+    </div>
+    
+{% endblock %}
